@@ -1,0 +1,90 @@
+/* variables */
+:root {
+  --primary: #ffc314;
+  --dark: #444;
+  --secondary: #021332;
+  --grey-light: #ddd;
+  --grey: #aaa;
+  --grey-hint: #666;
+}
+
+/* header */
+header {
+  grid-template-columns: 1fr;
+  place-items: center center;
+  line-height: 2rem;
+}
+
+header ul {
+  flex-direction: column;
+  place-self: stretch;
+}
+
+header a {
+  padding: 0.5rem 0;
+}
+
+header ul li {
+  padding: 1rem;
+  background: #eee;
+  align-self: stretch;
+  text-align: center;
+  border-bottom: 1px var(--grey) solid;
+}
+
+header ul li:last-child {
+  display: none;
+}
+
+header .logo {
+  font-size: 3rem;
+  padding: 2rem 0;
+  line-height: 3.2rem;
+  font-family: "Oswald", sans-serif;
+}
+
+/* nav */
+
+nav {
+  overflow: hidden;
+  padding: 0;
+  padding-top: 1.5rem;
+}
+
+nav a {
+  padding: 0 1rem;
+}
+
+/* showcase */
+
+.showcase {
+  grid-template-columns: 1fr;
+  grid-auto-rows: auto;
+}
+
+.showcase article:first-child {
+  grid-column: 1/2;
+  grid-row: 1/4;
+}
+
+.showcase article:last-child {
+  display: none;
+}
+
+/* ads */
+
+.ads {
+  display: flex;
+  flex-direction: column;
+  padding: 1rem;
+}
+
+.ads h1 {
+  font-size: 2rem;
+}
+
+/* content */
+
+.popular {
+  display: none;
+}
